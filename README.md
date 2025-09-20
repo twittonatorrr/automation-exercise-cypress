@@ -60,9 +60,11 @@ For running tests in this project, you have to install Cypress. For installing C
 ## Start tests running
 
 If you want to see all process of test running, you can use this command which open Cypress GUI,when you can choose specifis test to run:
+
     npx cypress open
 
 Or if running from the CLI use this one:
+
     npx cypress run --spec "cypress/path for test"
 
 ## Pathes for tests
@@ -81,7 +83,7 @@ Or if running from the CLI use this one:
 
 ## Tools
 
-    - Cypress
-    - Chai
-    - Mocha
-    - Prettier
+ - Cypress
+ - Chai
+ - Mocha
+ - Prettier
