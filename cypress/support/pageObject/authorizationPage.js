@@ -4,7 +4,7 @@ class AuthorizationPage{
     
     
     verifyLoginPage(data){
-        cy.get('h2').contains(this.data = data).should('be.visible'); //step 4: Verify 'New User Signup!' is visible
+        cy.get('h2').contains(this.data = data).should('be.visible');
     }
 
     logInWithCorrectCreditionals(email, password){
@@ -26,16 +26,16 @@ class AuthorizationPage{
 
     signUpUser(email){
         cy.get('input[placeholder="Name"]').type('Test Name');
-        cy.get('div.signup-form input[placeholder="Email Address"]').type(email); //step 5: Enter name and email address
-        cy.get('.btn.btn-default').contains('Signup').click(); //step 6: Click 'Signup' button
-        cy.get('.title.text-center').contains('Enter Account Information').should('be.visible');//step 7: Verify that 'ENTER ACCOUNT INFORMATION' is visible
+        cy.get('div.signup-form input[placeholder="Email Address"]').type(email);
+        cy.get('.btn.btn-default').contains('Signup').click(); 
+        cy.get('.title.text-center').contains('Enter Account Information').should('be.visible');
         return new RegistrationPage;
     }
 
     signUpExistingUser(email){
         cy.get('input[placeholder="Name"]').type('Test Name');
-                cy.get('div.signup-form input[placeholder="Email Address"]').type(email); //step 5: Enter name and email address
-                cy.get('.btn.btn-default').contains('Signup').click(); //step 6: Click 'Signup' button
+                cy.get('div.signup-form input[placeholder="Email Address"]').type(email);
+                cy.get('.btn.btn-default').contains('Signup').click();
                 cy.get('div .signup-form > form > p').should('contain', 'Email Address already exist!');
     }
    

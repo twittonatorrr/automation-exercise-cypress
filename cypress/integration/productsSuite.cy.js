@@ -51,7 +51,7 @@ describe('Products Suite', ()=>{
         cartPage.placeOrder();
         // cy.get('#success_message', { timeout: 1000 }) 
         //     .should('be.visible')
-        //     .and('contain', 'Your order has been placed successfully!'); //step 14: Verify Address Details and Review Your Order
+        //     .and('contain', 'Your order has been placed successfully!');
         homePage.deleteAccount();     
     });
 

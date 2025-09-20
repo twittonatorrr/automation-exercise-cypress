@@ -2,8 +2,8 @@
 const testPassword = 'Lbyfvj22$';
 class RegistrationPage{
     selectCheckboxes(){
-        cy.get('#newsletter').check(); // step 9:  Select checkbox 'Sign up for our newsletter!'
-        cy.get('#optin').check(); //step 10: Select checkbox 'Receive special offers from our partners!'
+        cy.get('#newsletter').check();
+        cy.get('#optin').check();
     }
 
     fillNameDetails(){
@@ -11,7 +11,7 @@ class RegistrationPage{
         cy.get('#name').type('Name');
         cy.get('#email').invoke('removeAttr', 'disabled').type('test@adress.com');
         cy.get('#password').type(testPassword);
-        cy.get('[data-qa="days"]').select('31');   //step 8: Fill details: Title, Name, Email, Password, Date of birth
+        cy.get('[data-qa="days"]').select('31');
     }
 
     fillAddressDetails(){
@@ -24,13 +24,13 @@ class RegistrationPage{
         cy.get('#state').type('Massachusetts');
         cy.get('#city').type('city');
         cy.get('#zipcode').type('81115');
-        cy.get('#mobile_number').type('999999999999'); //step 11: Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
+        cy.get('#mobile_number').type('999999999999');
     }
 
     clickCreateAccount(){
-        cy.get("button[data-qa='create-account']").click(); //step 12:  Click 'Create Account button'
-        cy.get('b').should('have.text','Account Created!'); //step 13: Verify that 'ACCOUNT CREATED!' is visible
-        cy.get("a[data-qa='continue-button']").click(); // step 15: Click 'Continue' button
+        cy.get("button[data-qa='create-account']").click();
+        cy.get('b').should('have.text','Account Created!');
+        cy.get("a[data-qa='continue-button']").click();
     }
 }
 export default RegistrationPage;

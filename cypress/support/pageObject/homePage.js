@@ -12,16 +12,16 @@ import CartPage from "./cartPage";
 
 class HomePage{
     goToLoginPage(){
-        cy.visit("https://automationexercise.com/"); //step 1: Navigate to url
-        cy.get('.logo.pull-left').should('be.visible'); //step 2: Verify that home page is visible successfully
-        cy.get('.nav.navbar-nav li').eq(3).click(); //step 3: Click on 'Signup / Login' button
+        cy.visit("https://automationexercise.com/");
+        cy.get('.logo.pull-left').should('be.visible');
+        cy.get('.nav.navbar-nav li').eq(3).click();
         return new AuthorizationPage;
     }
 
     deleteAccount(){
-        cy.get('a').contains(' Delete Account').click(); //step 17: Click 'Delete Account' button
+        cy.get('a').contains(' Delete Account').click();
         cy.get('b').contains('Account Deleted!').should('be.visible');
-        cy.get("a[data-qa='continue-button']").click(); //step 18: Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
+        cy.get("a[data-qa='continue-button']").click();
     }
 
     goToHomePage(){
@@ -86,8 +86,5 @@ class HomePage{
         cy.get('div .product-details').should('be.visible');
         return new ProductPage;
     }
-    // continueShopping(){
-
-    // }
 }
 export default HomePage;

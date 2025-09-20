@@ -36,7 +36,7 @@ Cypress.Commands.add('createNewUser', function(){
         authorizationPage.verifyLoginPage('New User Signup!')
         const registrationPage = authorizationPage.signUpUser(testEmail);
         
-        registrationPage.fillNameDetails();   //step 8: Fill details: Title, Name, Email, Password, Date of birth
+        registrationPage.fillNameDetails();
         registrationPage.selectCheckboxes();
         registrationPage.fillAddressDetails();
         registrationPage.clickCreateAccount();
