@@ -1,0 +1,23 @@
+{
+  "existingEmail": "existinguser2@gmail.com",
+  "existingPassword": "@8zLnqxapWqbCX7",
+  "existingName": "Existing User",
+
+  "testEmail": "test333332222@gmail.com",
+  "testPassword": "Lbyfvj22$",
+  "testName": "Test",
+
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "company": "My Company",
+  "address1": "Some Address Street",
+  "address2": "Some Address Street 2",
+  "country": "United States",
+  "state": "Massachusetts",
+  "city": "city",
+  "zipcode": "81115",
+  "mobileNumber": "999999999999",
+
+  
+  "baseUrl": "https://automationexercise.com/"
+}
