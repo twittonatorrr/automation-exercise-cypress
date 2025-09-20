@@ -71,8 +71,8 @@ Or if running from the CLI use this one:
 
     | Type | Location                                                 |
     | ---- | -------------------------------------------------------- |
-    | api  | [front-end/cypress/e2e/api/](cypress/api/*.cy.js)          |
-    | ui   | [front-end/cypress/e2e/ui/](cypress/integration/*.cy.js)   |
+    | api  | [cypress/api/](cypress/api/*.cy.js)          |
+    | ui   | [cypress/integration/ui/](cypress/integration/*.cy.js)   |
 
 ## Features
 
