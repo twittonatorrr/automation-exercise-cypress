@@ -67,12 +67,14 @@ Or if running from the CLI use this one:
 
     npx cypress run --spec "cypress/path for test"
 
+
 ## Pathes for tests
 
     | Type | Location                                                 |
     | ---- | -------------------------------------------------------- |
     | api  | [cypress/api/](cypress/api/*.cy.js)          |
     | ui   | [cypress/integration/ui/](cypress/integration/*.cy.js)   |
+    | BDD  | [cypress/integration/ui/](cypress/integration/BDD/*.feature)   |
 
 ## Features
 
