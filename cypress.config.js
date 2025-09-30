@@ -24,6 +24,7 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
     specPattern: "cypress/integration/BDD/*.feature",
+    // specPattern: "cypress/integration/*.cy.js",
     defaultCommandTimeout: 2000
   },
 });

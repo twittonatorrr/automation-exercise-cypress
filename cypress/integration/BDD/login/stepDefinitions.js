@@ -1,9 +1,9 @@
 import {Given, When, Then} from '@badeball/cypress-cucumber-preprocessor';
 import HomePage from '../../../support/pageObject/homePage';
-import testData from '../../../fixtures/example.json';
+import testData from '../../../fixtures/example.json'
 const homePage = new HomePage;
 
-Given('When User on Login Page', ()=>{
+Given('User on Login Page', ()=>{
     const authorizationPage = homePage.goToLoginPage();
     authorizationPage.verifyLoginPage('Login to your account');
 });
