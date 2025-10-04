@@ -857,7 +857,9 @@
 
     
 
-  "test": "echo \"Error: no test specified\" && exit 1"
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "e2e": "npx cypress run --spec 'cypress/integration/*.cy.js'",
+  "bdd": "npx cypress run --spec 'cypress/integration/BDD/*.feature'"
   
 
   },

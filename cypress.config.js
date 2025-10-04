@@ -23,8 +23,7 @@ async function setupNodeEvents(on, config) {
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
-    specPattern: "cypress/integration/BDD/*.feature",
-    // specPattern: "cypress/integration/*.cy.js",
+    specPattern:["cypress/integration/BDD/*.feature", "cypress/integration/*.cy.js"],
     defaultCommandTimeout: 2000
   },
 });

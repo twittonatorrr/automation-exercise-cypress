@@ -51,6 +51,13 @@ For the implementation of these tests, I used [Cypress](https://www.cypress.io/)
 -   ✅ API 13: PUT METHOD To Update User Account
 -   ✅ API 14: GET user account detail by email
 
+## API Test Cases
+-   ✅ Test Case 1: Register User
+-   ✅ Test Case 2: Login User with correct email and password
+-   ✅ Test Case 3: Login User with incorrect email and password
+-   ✅ Test Case 4: Logout User
+-   ✅ Test Case 5: Register User with existing email
+
 ## Requirments
 
 For running tests in this project, you have to install Cypress. For installing Cypress, switch(cd) to the project's root folder and run:
@@ -89,3 +96,4 @@ Or if running from the CLI use this one:
  - Chai
  - Mocha
  - Prettier
+ - Gherkin
